@@ -15,7 +15,19 @@ export const ButtonOne = styled.button`
     color: white;
     font-size: 1rem;
     font-weight: 700;
-    background-color: rgba(0,0,0, 0.8);
+    background-color: ${(props) => props.Backgroundcolor};
     box-shadow: 0px 4px 15px rgba(0,0,0, 0.2);
     margin: 1vw;
+    
+    -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+
+    &:hover {
+        background-color: #3393DD;
+        
+        cursor: pointer;
+
+    }
 `
