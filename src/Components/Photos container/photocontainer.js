@@ -9,7 +9,7 @@ align-items: flex-end;
     height: 100vh;
     background-image: url(${group});
     background-color: rgba(0,0,0,0.8);
-
+    background-position: center;
 
 `
 

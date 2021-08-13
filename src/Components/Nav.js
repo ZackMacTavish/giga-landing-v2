@@ -10,5 +10,6 @@ align-items: center;
     height: 7vh;
     position: fixed;
     background-color: white;
+    z-index: 500;
 
    `
