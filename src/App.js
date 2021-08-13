@@ -2,21 +2,21 @@ import styled from 'styled-components'
 
 
 
-import HomePageone from './Pages/HomePage1/homepage1';
+import HomePageone, { Everythingcontainer } from './Pages/HomePage1/homepage1';
 import HomePagetwo from './Pages/Homepage2';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom'; 
 import { Nav } from './Components/Nav';
 import { ButtonOne } from './Components/Buttons/Button.styles';
 import { Logoimage } from './Components/Logo/logo.styles';
 import logo from './Components/Logo/giga-logo.png';
-
+import { Footer, FooterFlextext, FooterText } from './Components/Footer/Footer.styles';
 
 
 
 function App() {
   return (
     <Router>
-    <div>
+  <Everythingcontainer>
         {/* Nav */}
         <Nav>
      <Logoimage src={logo}/>
@@ -26,13 +26,39 @@ function App() {
       </div>
       </Nav>
 
+      {/* Switch to Homepage One + Homepage Two */}
+
       <Switch>
 
       <Route path="/" exact component={HomePageone}/>
       <Route path="/learnmore" component={HomePagetwo}/>
       </Switch>
+
+
+
+
+            {/* Footer */}       
+     <Footer>
+     <Logoimage src={logo}/>
+      <FooterFlextext>
+        <FooterText>
+          About
+          </FooterText>
+          <FooterText>
+          Support
+          </FooterText>
+          <FooterText>
+          FAQ
+          </FooterText>
+          <FooterText>
+          Community
+          </FooterText>
+
+          </FooterFlextext>
+    
+     </Footer>
    
-   </div>
+     </Everythingcontainer>
    </Router>
 
 

@@ -28,12 +28,12 @@ import rcnt3 from '../../Components/Giga Guides/Hawaii.png';
 import rcnt4 from '../../Components/Giga Guides/Outdoors.png';
 import { GirlImage, MindsConnect } from '../../Components/Minds Connect Section/Mindsconnect.styles';
 import girl from '../../Components/Minds Connect Section/imagegirl.png';
-import { Footer, FooterFlextext, FooterText } from '../../Components/Footer/Footer.styles';
+
 
 import {Link} from 'react-router-dom';
 
 
-const Everythingcontainer = styled.div`
+export const Everythingcontainer = styled.div`
 margin: 0;
 padding: 0;
 overflow: hidden;
@@ -79,7 +79,7 @@ function HomePageone() {
                 
             <TitleOne Titlecolor="white">Why Join Giga?</TitleOne>
             <TitleTwo>Giga is a place where all humans can understand and be understood in privacy.</TitleTwo>
-            
+
                     {/* Link to learn more */}
                     <Link to="/learnmore">
                             <ButtonOne Backgroundcolor="rgba(0,0,0, 0.8)">What is Giga</ButtonOne>
@@ -213,26 +213,6 @@ function HomePageone() {
 
                   </TrendingNowContainer>
 
-            {/* Footer */}       
-     <Footer>
-     <Logoimage src={logo}/>
-      <FooterFlextext>
-        <FooterText>
-          About
-          </FooterText>
-          <FooterText>
-          Support
-          </FooterText>
-          <FooterText>
-          FAQ
-          </FooterText>
-          <FooterText>
-          Community
-          </FooterText>
-
-          </FooterFlextext>
-    
-     </Footer>
      </Everythingcontainer>
     
   );
