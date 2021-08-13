@@ -34,7 +34,7 @@ export const FlexTextbutton = styled.div`
 `
 
 export const TextGetstarted = styled.h4`
-    color: white;
+    color: ${(props) => props.Backgroundcolor};
     font-size: 3rem;
     margin: 0;
     padding-bottom: 2vh;

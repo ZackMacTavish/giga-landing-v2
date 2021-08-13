@@ -44,10 +44,10 @@ padding-left: 2vw;
 color: #2ca3ff;
 padding-top: 0;
 margin: 0;
--webkit-transition: all 2s ease;
-  -moz-transition: all 2s ease;
-  -o-transition: all 2s ease;
-  transition: all 2s ease;
+-webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 
   &:hover {
       opacity: 0.8;
