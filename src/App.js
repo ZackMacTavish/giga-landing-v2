@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import HomePageone, { Everythingcontainer } from './Pages/HomePage1/homepage1';
 import HomePagetwo from './Pages/Homepage2';
-import {BrowserRouter as Router, Switch, Route } from 'react-router-dom'; 
+import {BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'; 
 import { Nav } from './Components/Nav';
 import { ButtonOne } from './Components/Buttons/Button.styles';
 import { Logoimage } from './Components/Logo/logo.styles';
@@ -19,7 +19,9 @@ function App() {
   <Everythingcontainer>
         {/* Nav */}
         <Nav>
+          <Link to="/">
      <Logoimage src={logo}/>
+     </Link>
      <div>
       <ButtonOne Backgroundcolor="rgba(0,0,0, 0.8)">Sign Up</ButtonOne>
       <ButtonOne Backgroundcolor="rgba(0,0,0, 0.4)">Sign In</ButtonOne>
@@ -39,7 +41,9 @@ function App() {
 
             {/* Footer */}       
      <Footer>
+     <Link to="/">
      <Logoimage src={logo}/>
+     </Link>
       <FooterFlextext>
         <FooterText>
           About
