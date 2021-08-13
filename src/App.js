@@ -29,6 +29,7 @@ import rcnt3 from './Components/Giga Guides/Hawaii.png';
 import rcnt4 from './Components/Giga Guides/Outdoors.png';
 import { GirlImage, MindsConnect } from './Components/Minds Connect Section/Mindsconnect.styles';
 import girl from './Components/Minds Connect Section/imagegirl.png';
+import { Footer, FooterFlextext, FooterText } from './Components/Footer/Footer.styles';
 
 
 const Everythingcontainer = styled.div`
@@ -208,7 +209,25 @@ function HomePage1() {
 
 
                   </TrendingNowContainer>
-     
+     <Footer>
+     <Logoimage src={logo}/>
+      <FooterFlextext>
+        <FooterText>
+          About
+          </FooterText>
+          <FooterText>
+          Support
+          </FooterText>
+          <FooterText>
+          FAQ
+          </FooterText>
+          <FooterText>
+          Community
+          </FooterText>
+
+          </FooterFlextext>
+    
+     </Footer>
      </Everythingcontainer>
     
   );

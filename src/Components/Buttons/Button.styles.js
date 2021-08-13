@@ -17,8 +17,7 @@ export const ButtonOne = styled.button`
     font-weight: 700;
     background-color: ${(props) => props.Backgroundcolor};
     box-shadow: 0px 4px 15px rgba(0,0,0, 0.2);
-    margin: 1vw;
-    
+    margin: 1vw 1.3vw;
     -webkit-transition: all 2s ease;
   -moz-transition: all 2s ease;
   -o-transition: all 2s ease;
