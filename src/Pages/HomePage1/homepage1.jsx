@@ -117,10 +117,11 @@ function HomePageone() {
                         </div>
               </TrendingPhotosflex>
           </TrendingNowContainer>
-              <FlexContainer>
 
-                 {/* Get Started */}
-                      <Getstarted>
+  {/* Get Started */}
+              <FlexContainer>
+                  
+                    <Getstarted>
 
                           <FlexTextbutton>
                           <TextGetstarted Backgroundcolor="white">Learn about something new and share with your friend group.</TextGetstarted>
@@ -192,7 +193,7 @@ function HomePageone() {
 
                 </GigaGuides>
 
-                  {/* Recently Made */}
+                  {/* Minds Connect - Girl Photo */}
 
                   <TrendingNowContainer>
                     <MindsConnect>
@@ -200,7 +201,7 @@ function HomePageone() {
                           <TextGetstarted Backgroundcolor="#2ca3ff">A place where all minds connect.</TextGetstarted>
                                 {/* Link to Learn More */}
                             <Link to="/learnmore">
-                                    <ButtonOne Backgroundcolor="rgba(0,0,0, 0.3)">Get Started</ButtonOne>
+                                    <ButtonOne Backgroundcolor="rgba(0,0,0, 0.3)">Learn more</ButtonOne>
                             </Link>
 
                         </FlexTextbutton>

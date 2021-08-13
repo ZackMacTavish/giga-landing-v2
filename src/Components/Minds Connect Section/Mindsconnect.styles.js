@@ -12,7 +12,7 @@ margin-top: 7vh;
 `
 
 export const GirlImage = styled.img`
-margin-left: 8vw;
+margin-left: 4vw;
 height: 55vh;
 
 
