@@ -10,6 +10,7 @@ import { ButtonOne } from './Components/Buttons/Button.styles';
 import { Logoimage } from './Components/Logo/logo.styles';
 import logo from './Components/Logo/giga-logo.png';
 import { Footer, FooterFlextext, FooterText } from './Components/Footer/Footer.styles';
+import GigaGuidesone from './Pages/Giga Guides/Gigaguides1';
 
 
 
@@ -34,6 +35,7 @@ function App() {
 
       <Route path="/" exact component={HomePageone}/>
       <Route path="/learnmore" component={HomePagetwo}/>
+      <Route path="/giga-guides1" component={GigaGuidesone}/>
       </Switch>
 
 

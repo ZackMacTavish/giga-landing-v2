@@ -67,6 +67,11 @@ padding-left: 2vw;
 bottom: 8vh;
 `
 
+const Linkrestyle = styled.div`
+text-decoration: none;
+`
+
+
 function HomePageone() {
   return (
    <Everythingcontainer>
@@ -140,8 +145,10 @@ function HomePageone() {
 
                 <TrendingPhotosflex>
                         <div>
+                          <Link style={{textDecoration: 'none'}} to="/giga-guides1">
                             <GuideBoxes src={guide1} />
                             <TrendingNowtopics>Create Assessments</TrendingNowtopics>
+                            </Link>
                         </div>
 
                         <div>
