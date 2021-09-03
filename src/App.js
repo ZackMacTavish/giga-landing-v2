@@ -11,6 +11,7 @@ import { Logoimage } from './Components/Logo/logo.styles';
 import logo from './Components/Logo/giga-logo.png';
 import { Footer, FooterFlextext, FooterText } from './Components/Footer/Footer.styles';
 import GigaGuidesone from './Pages/Giga Guides/Gigaguides1';
+import About from './Pages/About';
 
 
 
@@ -36,6 +37,7 @@ function App() {
       <Route path="/" exact component={HomePageone}/>
       <Route path="/learnmore" component={HomePagetwo}/>
       <Route path="/giga-guides1" component={GigaGuidesone}/>
+      <Route path="/about" component={About}/>
       </Switch>
 
 
@@ -47,9 +49,11 @@ function App() {
      <Logoimage src={logo}/>
      </Link>
       <FooterFlextext>
+        <Link style={{textDecoration: 'none', color: 'black'}} to='/about'>
         <FooterText>
           About
           </FooterText>
+          </Link>
           <FooterText>
           Support
           </FooterText>

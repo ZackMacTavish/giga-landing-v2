@@ -4,6 +4,7 @@ import img from '../Buttons/Button-blur.png'
 
 
 export const ButtonOne = styled.button`
+   
     width: 12vw;
     height: 5vh;
     backdrop-filter: blur(5px);
