@@ -12,6 +12,7 @@ import logo from './Components/Logo/giga-logo.png';
 import { Footer, FooterFlextext, FooterText } from './Components/Footer/Footer.styles';
 import GigaGuidesone from './Pages/Giga Guides/Gigaguides1';
 import About from './Pages/About';
+import MessageUs from './Pages/MessageUs';
 
 
 
@@ -38,6 +39,7 @@ function App() {
       <Route path="/learnmore" component={HomePagetwo}/>
       <Route path="/giga-guides1" component={GigaGuidesone}/>
       <Route path="/about" component={About}/>
+      <Route path="/messageus" component={MessageUs}/>
       </Switch>
 
 

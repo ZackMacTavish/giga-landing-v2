@@ -4,8 +4,6 @@ import moonlight from '../Photos/Moonlight.svg';
 import styled from 'styled-components';
 import { ButtonOne } from '../Components/Buttons/Button.styles';
 
-
-
 const AboutContainer = styled.div`
 display: grid;
     grid-template-columns: auto  15vw 1vw 15vw auto;
@@ -98,7 +96,7 @@ export default function About() {
     <PositionButtontwo>
        
         <ButtonOne Backgroundcolor="rgba(0,0,0, 0.8)">
-        <Link style={{ textDecoration: 'none', color: 'white' }} to="/">
+        <Link style={{ textDecoration: 'none', color: 'white' }} to="/messageus">
         <h3 style={{padding: '0', margin: '0'}}>Message Us</h3>
            
                  
