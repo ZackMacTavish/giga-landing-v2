@@ -1,7 +1,7 @@
 
 import styled from 'styled-components';
 import { ButtonOne } from '../../Components/Buttons/Button.styles';
-import web1 from '../Giga Guides/Web-Group.png';
+import web1 from '../Giga Guides/1.png';
 import web2 from '../Giga Guides/Assessment-Section.png';
 import web3 from '../Giga Guides/Toggle-Topics.png';
 import { BigTexthome, Paragraph } from '../Homepage2';
@@ -11,19 +11,20 @@ import {Link} from 'react-router-dom';
 import rubric from '../Giga Guides/Rubric-Photo.png';
 import { MindsConnect } from '../../Components/Minds Connect Section/Mindsconnect.styles';
 
-const GigaGuideone = styled.div`
+export const GigaGuideone = styled.div`
 display: flex;
 width: 100vw;
 height: 100vh;
 align-items: center;
+justify-content: center;
 `
 
-const WebImage = styled.img`
+export const WebImage = styled.img`
 height: 80vh;
 padding-left: 3vw;
 `
 
-const WebImagetwo = styled.img`
+export const WebImagetwo = styled.img`
 height: 60vh;
 padding-left: 7vw;
 padding-right: 11vw;
@@ -46,7 +47,7 @@ function GigaGuidesone() {
       <WebImage src={web1 }/>
 
 <div>
-<BigTexthome>Create Assessment on a Subject or Key Factor in a Category </BigTexthome>
+<BigTexthome Stylewidth="30vw;">Create Assessment on a Subject or Key Factor in a Category </BigTexthome>
 <Paragraph>The assessment part of Giga allows you to write your perspective on a Subject or 
   Key Factor. Through Giga's rubric we give you a guided way to write an analysis.
 </Paragraph>
@@ -93,11 +94,11 @@ function GigaGuidesone() {
  <GigaGuideone>
     <WebImagetwo src={web3 }/>
     <div>
-    <BigTexthome>The Assessment</BigTexthome>
+    <BigTexthome>The Assessment Topics</BigTexthome>
     <Paragraph>When analyzing a subject, the Giga system is flexible to toggle rubric topics.
       Start your basic membership now, and share your viewpoints with the world.
     </Paragraph>
-    <ButtonOne Backgroundcolor="rgba(0,0,0, 0.5)">Toggle on Topics</ButtonOne>
+    <ButtonOne Backgroundcolor="rgba(0,0,0, 0.5)">Create Assessment</ButtonOne>
     </div>
 </GigaGuideone>
 

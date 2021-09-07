@@ -152,18 +152,24 @@ function HomePageone() {
                         </div>
 
                         <div>
+                        <Link style={{textDecoration: 'none'}} to="/giga-guides2">
                             <GuideBoxes src={guide2} />
                             <TrendingNowtopics>Becoming a Pro User</TrendingNowtopics>
+                            </Link>
                          </div>
 
                         <div>
+                        <Link style={{textDecoration: 'none'}} to="/giga-guides3">
                             <GuideBoxes src={guide3} />
                             <TrendingNowtopics>Understanding Subjects</TrendingNowtopics>
+                            </Link>
                         </div>
 
                         <div>
+                        <Link style={{textDecoration: 'none'}} to="/giga-guides4">
                             <GuideBoxes src={guide4} />
                             <TrendingNowtopics>Create a Category</TrendingNowtopics>
+                            </Link>
                         </div>
 
                         </TrendingPhotosflex>
