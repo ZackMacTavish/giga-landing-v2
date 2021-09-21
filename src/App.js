@@ -16,6 +16,7 @@ import MessageUs from './Pages/MessageUs';
 import GigaGuidestwo from './Pages/Giga Guides/GigaGuides2';
 import GigaGuidesthree from './Pages/Giga Guides/GigaGuides3';
 import GigaGuidesfour from './Pages/Giga Guides/GigaGuides4';
+import Faq from './Pages/FAQ Page/Faq';
 
 
 
@@ -44,6 +45,7 @@ function App() {
       <Route path="/giga-guides2" component={GigaGuidestwo}/>
       <Route path="/giga-guides3" component={GigaGuidesthree}/>
       <Route path="/giga-guides4" component={GigaGuidesfour}/>
+      <Route path="/faq" component={Faq}/>
       <Route path="/about" component={About}/>
       <Route path="/messageus" component={MessageUs}/>
       </Switch>

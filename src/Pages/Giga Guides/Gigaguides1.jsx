@@ -9,7 +9,8 @@ import { TrendingNowContainer } from '../../Components/Trending Now Section/Tren
 import { FlexTextbutton, TextGetstarted } from '../../Components/Get Started/Getstarted.styles';
 import {Link} from 'react-router-dom';
 import rubric from '../Giga Guides/Rubric-Photo.png';
-import { MindsConnect } from '../../Components/Minds Connect Section/Mindsconnect.styles';
+import { GirlImage, MindsConnect } from '../../Components/Minds Connect Section/Mindsconnect.styles';
+import study from './Studying.png';
 
 export const GigaGuideone = styled.div`
 display: flex;
@@ -101,6 +102,32 @@ function GigaGuidesone() {
     <ButtonOne Backgroundcolor="rgba(0,0,0, 0.5)">Create Assessment</ButtonOne>
     </div>
 </GigaGuideone>
+
+      {/* Minds Connect - Girl Photo Reused as FAQ Seection*/}
+
+      <TrendingNowContainer>
+                    <MindsConnect>
+                    <FlexTextbutton>
+                          <BigTexthome Backgroundcolor="#2ca3ff">Our FAQs</BigTexthome>
+                          <Paragraph>Please view our FAQs section to get a complete understanding of what Giga has to offer. 
+                            You can find the technical documents by clicking below.</Paragraph>
+                          
+                                {/* Link to Learn More */}
+                            <Link to="/faq">
+                                    <ButtonOne Backgroundcolor="rgba(0,0,0, 0.3)">See FAQs</ButtonOne>
+                            </Link>
+
+                        </FlexTextbutton>
+                        <div>
+                    <GirlImage  src={study} />
+                        </div>
+
+                    </MindsConnect>
+
+
+                  </TrendingNowContainer>
+
+
 
 </div>    
       
