@@ -1,63 +1,92 @@
-import React from 'react'
-import styled from 'styled-components';
 
-const FullFaq = styled.div`
-display: flex;
-width: 100vw;
-height: auto;
-`
+import React from "react";
 
-const SideNav = styled.div`
 
-width: 20vw;
-height: 100vh;
-background-color: #F4F4F4 ;
-`
-const Listitems = styled.ul`
-text-decoration: none;
-color: #707070;
-list-style-type: none;
-font-weight: 800;
-width:200vw;
-padding-left: 4vw;
-padding-top: 6vw;
-`
+import Tabs from "./Tabs";
+import Panel from "./Panel";
 
-const IndividualItem = styled.li`
-padding: 1vw;
-&:hover{
-opacity: 0.8;
-cursor: pointer;
+import { events } from "./data";
+
+import "./styles.css";
+
+
+function Faq() {
+  return (
+    <Tabs>
+
+      <Panel title="Getting Started">
+        {events
+          .filter(event => event.category === "Getting Started")
+          .map(event => {
+            return <div key={event.id}>
+                <h2> 
+                {event.title}
+            </h2>
+            {event.description}</div>;
+          })}
+      </Panel>
+
+      <Panel title="Creating A Category">
+        {events
+          .filter(event => event.category === "Creating Category")
+          .map(event => {
+            return <div key={event.id}>
+                <h2> 
+                {event.title}
+            </h2>
+            {event.description}</div>;
+          })}
+      </Panel>
+
+      <Panel title="Creating A Subject">
+        {events
+          .filter(event => event.category === "Creating a Subject")
+          .map(event => {
+            return <div key={event.id}>
+                <h2> 
+                {event.title}
+            </h2>
+            {event.description}</div>;
+          })}
+      </Panel>
+
+      <Panel title="Creating An Assessment">
+        {events
+          .filter(event => event.category === "Creating an Assessment")
+          .map(event => {
+            return <div key={event.id}>
+                <h2> 
+                {event.title}
+            </h2>
+            {event.description}</div>;
+          })}
+      </Panel>
+
+      <Panel title="Filter Points of View">
+        {events
+          .filter(event => event.category === "Filter Points of View")
+          .map(event => {
+            return <div key={event.id}>
+                <h2> 
+                {event.title}
+            </h2>
+            {event.description}</div>;
+          })}
+      </Panel>
+
+      <Panel title="Assessment Topics">
+        {events
+          .filter(event => event.category === "Assessment Topics")
+          .map(event => {
+            return <div key={event.id}>
+                <h2> 
+                {event.title}
+            </h2>
+            {event.description}</div>;
+          })}
+      </Panel>
+    </Tabs>
+  );
 }
-`
 
-class Faq extends React.Component {
-
-    
-    render() {
-      return (
-        <FullFaq>
-
-        <SideNav>
-            <Listitems>
-                <IndividualItem>Getting Started</IndividualItem>
-                <IndividualItem>Create a Category</IndividualItem>
-                <IndividualItem>Create a Subject</IndividualItem>
-                <IndividualItem>Create an Assessment</IndividualItem>
-                <IndividualItem>Filter Points of View</IndividualItem>
-                <IndividualItem>Assessment Topics</IndividualItem>
-
-
-                </Listitems>
-
-
-        </SideNav>
-       
-
-       </FullFaq>
-        
-      );
-    }
-  }
-  export default Faq;
-
+export default Faq;
